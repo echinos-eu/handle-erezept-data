@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="https://www.google.com/url?q=http://hl7.org/fhir&source=gmail-imap&ust=1706175766000000&usg=AOvVaw12xnYS9-R6P3jmWXkosD03">
+<Bundle xmlns="http://hl7.org/fhir">
 	<id value="91446b7b-6e1e-468d-bc6a-de8b8ebdc8ef"/>
 	<meta>
 		<profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_Bundle|1.3"/>
@@ -11,10 +11,10 @@
 		</tag>
 	</meta>
 	<identifier>
-		<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Dateinummer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0i02PRsvn4M8tI9fDoNYys">
+		<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Dateinummer">
 			<valueString value="00001"/>
 		</extension>
-		<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1DBuisvaFWRvE6S8WlEJqe"/>
+		<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
 		<value value="ARZFHR23001"/>
 	</identifier>
 	<type value="collection"/>
@@ -27,37 +27,37 @@
 				<meta>
 					<profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_TA7_Rechnung_Composition|1.3"/>
 				</meta>
-				<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Empfaenger&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1kbcKO4A9SDoQZH82CqwcO">
+				<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Empfaenger">
 					<valueIdentifier>
-						<system value="https://www.google.com/url?q=http://fhir.de/sid/arge-ik/iknr&source=gmail-imap&ust=1706175766000000&usg=AOvVaw10KriPJZkO_TJaPSAMy2Mt"/>
+						<system value="http://fhir.de/sid/arge-ik/iknr"/>
 						<value value="102109128"/>
 					</valueIdentifier>
 				</extension>
-				<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Kostentraeger&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3MvpnNwTwVXiQ9gtog9Um7">
+				<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_TA7_IK_Kostentraeger">
 					<valueIdentifier>
-						<system value="https://www.google.com/url?q=http://fhir.de/sid/arge-ik/iknr&source=gmail-imap&ust=1706175766000000&usg=AOvVaw10KriPJZkO_TJaPSAMy2Mt"/>
+						<system value="http://fhir.de/sid/arge-ik/iknr"/>
 						<value value="105508787"/>
 					</valueIdentifier>
 				</extension>
 				<identifier>
-					<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Rechnungsnummer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3ZWStSTCae9rIVaf1nWdz-"/>
+					<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Rechnungsnummer"/>
 					<value value="105508787-01-100823"/>
 				</identifier>
 				<status value="final"/>
 				<type>
 					<coding>
-						<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Rechnungsart&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3hAOUpYIxVu9qYJos3yIwm"/>
+						<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Rechnungsart"/>
 						<code value="6"/>
 					</coding>
 				</type>
 				<date value="2023-07-31">
-					<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Rechnungsdatum&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1QEmNEuV4mp7odZP_6OehQ">
+					<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_TA7_Rechnungsdatum">
 						<valueDateTime value="2023-08-10"/>
 					</extension>
 				</date>
 				<author>
 					<identifier>
-						<system value="https://www.google.com/url?q=http://fhir.de/sid/arge-ik/iknr&source=gmail-imap&ust=1706175766000000&usg=AOvVaw10KriPJZkO_TJaPSAMy2Mt"/>
+						<system value="http://fhir.de/sid/arge-ik/iknr"/>
 						<value value="307503662"/>
 					</identifier>
 				</author>
@@ -65,7 +65,7 @@
 				<section>
 					<code>
 						<coding>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2W-0UAO67gSdVFtwXdb16s"/>
+							<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7"/>
 							<code value="LR"/>
 						</coding>
 					</code>
@@ -76,7 +76,7 @@
 				<section>
 					<code>
 						<coding>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2W-0UAO67gSdVFtwXdb16s"/>
+							<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7"/>
 							<code value="RB"/>
 							<display value="Rezept-Bundle"/>
 						</coding>
@@ -88,7 +88,7 @@
 				<section>
 					<code>
 						<coding>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2W-0UAO67gSdVFtwXdb16s"/>
+							<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7"/>
 							<code value="RB"/>
 							<display value="Rezept-Bundle"/>
 						</coding>
@@ -100,7 +100,7 @@
 				<section>
 					<code>
 						<coding>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2W-0UAO67gSdVFtwXdb16s"/>
+							<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_TA7"/>
 							<code value="RB"/>
 							<display value="Rezept-Bundle"/>
 						</coding>
@@ -125,7 +125,7 @@
 				<entry>
 					<item>
 						<identifier>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1DBuisvaFWRvE6S8WlEJqe"/>
+							<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
 							<value value="ARZFHR23001"/>
 						</identifier>
 					</item>
@@ -133,7 +133,7 @@
 				<entry>
 					<item>
 						<identifier>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1DBuisvaFWRvE6S8WlEJqe"/>
+							<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
 							<value value="ARZFHR23002"/>
 						</identifier>
 					</item>
@@ -141,7 +141,7 @@
 				<entry>
 					<item>
 						<identifier>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1DBuisvaFWRvE6S8WlEJqe"/>
+							<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
 							<value value="ARZFK123003"/>
 						</identifier>
 					</item>
@@ -149,7 +149,7 @@
 				<entry>
 					<item>
 						<identifier>
-							<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1DBuisvaFWRvE6S8WlEJqe"/>
+							<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Dateiname"/>
 							<value value="ARZFHR23004"/>
 						</identifier>
 					</item>
@@ -169,7 +169,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle&source=gmail-imap&ust=1706175766000000&usg=AOvVaw23RsZWnll8NMZY5S6eeL4W"/>
+						<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle"/>
 					</link>
 					<fullUrl value="urn:uuid:a9aea390-b695-476c-94c3-8f0125472a97"/>
 					<resource>
@@ -186,7 +186,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://gematik.de/fhir/StructureDefinition/ErxReceipt&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0lGJOkcQkbPu9WUxHL3_bu"/>
+						<url value="https://gematik.de/fhir/StructureDefinition/ErxReceipt"/>
 					</link>
 					<fullUrl value="urn:uuid:d219342a-c907-4ff6-abbb-f4765441dacc"/>
 					<resource>
@@ -203,7 +203,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3Rjf78f9f5p8_96T8w10_C"/>
+						<url value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle"/>
 					</link>
 					<fullUrl value="urn:uuid:60fbad4f-115d-4390-9ecc-ad371463fb98"/>
 					<resource>
@@ -220,7 +220,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2q-pqDQgsxwooJrQ97i81E"/>
+						<url value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten"/>
 					</link>
 					<fullUrl value="urn:uuid:96c78f3a-49a2-449b-876e-d8743fa8d6c6"/>
 					<resource>
@@ -229,56 +229,56 @@
 							<meta>
 								<profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.3"/>
 							</meta>
-							<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3XkafC6Pls97ysi3ZlH8eh">
+							<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer">
 								<valueBoolean value="false"/>
 							</extension>
 							<identifier>
-								<system value="https://www.google.com/url?q=https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2Ltpq7BNF6DecHcMWjU9KJ"/>
+								<system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
 								<value value="160.100.000.000.023.70"/>
 							</identifier>
 							<identifier>
-								<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Belegnummer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3TN0wjWjzT2NWR-zZLSsPu"/>
+								<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Belegnummer"/>
 								<value value="2105523450040000001"/>
 							</identifier>
 							<status value="issued"/>
 							<issuer>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_LE_Sitz&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1dp2EPfpnuiFcOVekOWh0z">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_LE_Sitz">
 									<valueCoding>
-										<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringer_Sitz&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3460H7nho-T_OuKUrtp9-b"/>
+										<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringer_Sitz"/>
 										<code value="1"/>
 									</valueCoding>
 								</extension>
 								<identifier>
 									<type>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringertyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0YnnVmEpxOfUyRqhGSfl-S"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringertyp"/>
 											<code value="A"/>
 										</coding>
 									</type>
-									<system value="https://www.google.com/url?q=http://fhir.de/sid/arge-ik/iknr&source=gmail-imap&ust=1706175766000000&usg=AOvVaw10KriPJZkO_TJaPSAMy2Mt"/>
+									<system value="http://fhir.de/sid/arge-ik/iknr"/>
 									<value value="308412345"/>
 								</identifier>
 							</issuer>
 							<lineItem>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Positionstyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1BO3HKd_Y3ibzotDxUM0Ld">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Positionstyp">
 									<valueCodeableConcept>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Positionstyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2PMk3zi2FSGo-CtypeumRJ"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Positionstyp"/>
 											<code value="1"/>
 											<display value="übrige Position"/>
 										</coding>
 									</valueCodeableConcept>
 								</extension>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_VAT_VALUE&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3NMmWQ_xUy98fPnyDESE6W">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_VAT_VALUE">
 									<valueMoney>
 										<value value="2.47"/>
 										<currency value="EUR"/>
 									</valueMoney>
 								</extension>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Import&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1HtVGazTlSK67_qvz_qFYF">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Import">
 									<valueCodeableConcept>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Import&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0t1HBFViWBoRjmIsoYO44S"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Import"/>
 											<code value="0"/>
 										</coding>
 									</valueCodeableConcept>
@@ -286,7 +286,7 @@
 								<sequence value="1"/>
 								<chargeItemCodeableConcept>
 									<coding>
-										<system value="https://www.google.com/url?q=http://terminology.hl7.org/CodeSystem/v3-NullFlavor&source=gmail-imap&ust=1706175766000000&usg=AOvVaw21Tml6eya5JTPM59_ADL2e"/>
+										<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
 										<code value="UNC"/>
 									</coding>
 								</chargeItemCodeableConcept>
@@ -294,7 +294,7 @@
 									<type value="deduction"/>
 									<code>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_ZuAbschlagKey&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2AfpFstcxPr9rduRGKfg40"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_ZuAbschlagKey"/>
 											<code value="R001"/>
 										</coding>
 									</code>
@@ -322,7 +322,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle&source=gmail-imap&ust=1706175766000000&usg=AOvVaw23RsZWnll8NMZY5S6eeL4W"/>
+						<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle"/>
 					</link>
 					<fullUrl value="urn:uuid:7cbfa3cd-598e-4afc-aa99-9cc93bbb0253"/>
 					<resource>
@@ -339,7 +339,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://gematik.de/fhir/StructureDefinition/ErxReceipt&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0lGJOkcQkbPu9WUxHL3_bu"/>
+						<url value="https://gematik.de/fhir/StructureDefinition/ErxReceipt"/>
 					</link>
 					<fullUrl value="urn:uuid:58fbedb2-54ed-4ef8-9b48-650b7b4a28ad"/>
 					<resource>
@@ -356,7 +356,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3Rjf78f9f5p8_96T8w10_C"/>
+						<url value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle"/>
 					</link>
 					<fullUrl value="urn:uuid:ea421499-ec05-433d-95e6-c6e40cf45721"/>
 					<resource>
@@ -373,7 +373,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2q-pqDQgsxwooJrQ97i81E"/>
+						<url value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten"/>
 					</link>
 					<fullUrl value="urn:uuid:a47f834d-3c2b-4751-a547-58d1f3a8cfa8"/>
 					<resource>
@@ -382,56 +382,56 @@
 							<meta>
 								<profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.3"/>
 							</meta>
-							<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3XkafC6Pls97ysi3ZlH8eh">
+							<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer">
 								<valueBoolean value="false"/>
 							</extension>
 							<identifier>
-								<system value="https://www.google.com/url?q=https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2Ltpq7BNF6DecHcMWjU9KJ"/>
+								<system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
 								<value value="160.100.000.000.023.71"/>
 							</identifier>
 							<identifier>
-								<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Belegnummer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3TN0wjWjzT2NWR-zZLSsPu"/>
+								<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Belegnummer"/>
 								<value value="2105523450050000002"/>
 							</identifier>
 							<status value="issued"/>
 							<issuer>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_LE_Sitz&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1dp2EPfpnuiFcOVekOWh0z">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_LE_Sitz">
 									<valueCoding>
-										<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringer_Sitz&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3460H7nho-T_OuKUrtp9-b"/>
+										<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringer_Sitz"/>
 										<code value="1"/>
 									</valueCoding>
 								</extension>
 								<identifier>
 									<type>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringertyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0YnnVmEpxOfUyRqhGSfl-S"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringertyp"/>
 											<code value="A"/>
 										</coding>
 									</type>
-									<system value="https://www.google.com/url?q=http://fhir.de/sid/arge-ik/iknr&source=gmail-imap&ust=1706175766000000&usg=AOvVaw10KriPJZkO_TJaPSAMy2Mt"/>
+									<system value="http://fhir.de/sid/arge-ik/iknr"/>
 									<value value="308412345"/>
 								</identifier>
 							</issuer>
 							<lineItem>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Positionstyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1BO3HKd_Y3ibzotDxUM0Ld">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Positionstyp">
 									<valueCodeableConcept>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Positionstyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2PMk3zi2FSGo-CtypeumRJ"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Positionstyp"/>
 											<code value="1"/>
 											<display value="übrige Position"/>
 										</coding>
 									</valueCodeableConcept>
 								</extension>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_VAT_VALUE&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3NMmWQ_xUy98fPnyDESE6W">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_VAT_VALUE">
 									<valueMoney>
 										<value value="2.47"/>
 										<currency value="EUR"/>
 									</valueMoney>
 								</extension>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Import&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1HtVGazTlSK67_qvz_qFYF">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Import">
 									<valueCodeableConcept>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Import&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0t1HBFViWBoRjmIsoYO44S"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Import"/>
 											<code value="0"/>
 										</coding>
 									</valueCodeableConcept>
@@ -439,7 +439,7 @@
 								<sequence value="1"/>
 								<chargeItemCodeableConcept>
 									<coding>
-										<system value="https://www.google.com/url?q=http://terminology.hl7.org/CodeSystem/v3-NullFlavor&source=gmail-imap&ust=1706175766000000&usg=AOvVaw21Tml6eya5JTPM59_ADL2e"/>
+										<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
 										<code value="UNC"/>
 									</coding>
 								</chargeItemCodeableConcept>
@@ -447,7 +447,7 @@
 									<type value="deduction"/>
 									<code>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_ZuAbschlagKey&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2AfpFstcxPr9rduRGKfg40"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_ZuAbschlagKey"/>
 											<code value="R001"/>
 										</coding>
 									</code>
@@ -475,7 +475,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle&source=gmail-imap&ust=1706175766000000&usg=AOvVaw23RsZWnll8NMZY5S6eeL4W"/>
+						<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle"/>
 					</link>
 					<fullUrl value="urn:uuid:a1f93d2a-6872-454b-8154-e81d429269f0"/>
 					<resource>
@@ -492,7 +492,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://gematik.de/fhir/StructureDefinition/ErxReceipt&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0lGJOkcQkbPu9WUxHL3_bu"/>
+						<url value="https://gematik.de/fhir/StructureDefinition/ErxReceipt"/>
 					</link>
 					<fullUrl value="urn:uuid:86bb641f-3d58-4aad-b0a6-42a7c416782f"/>
 					<resource>
@@ -509,7 +509,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3Rjf78f9f5p8_96T8w10_C"/>
+						<url value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle"/>
 					</link>
 					<fullUrl value="urn:uuid:c1663654-8658-4563-b61e-1f7c66828f01"/>
 					<resource>
@@ -526,7 +526,7 @@
 				<entry>
 					<link>
 						<relation value="item"/>
-						<url value="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2q-pqDQgsxwooJrQ97i81E"/>
+						<url value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten"/>
 					</link>
 					<fullUrl value="urn:uuid:c69efd0e-9c36-44e5-bc23-3f480724dd7d"/>
 					<resource>
@@ -535,56 +535,56 @@
 							<meta>
 								<profile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_ERP_eAbrechnungsdaten|1.3"/>
 							</meta>
-							<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3XkafC6Pls97ysi3ZlH8eh">
+							<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Irrlaeufer">
 								<valueBoolean value="false"/>
 							</extension>
 							<identifier>
-								<system value="https://www.google.com/url?q=https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2Ltpq7BNF6DecHcMWjU9KJ"/>
+								<system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
 								<value value="160.100.000.000.001.39"/>
 							</identifier>
 							<identifier>
-								<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Belegnummer&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3TN0wjWjzT2NWR-zZLSsPu"/>
+								<system value="https://fhir.gkvsv.de/NamingSystem/GKVSV_NS_Belegnummer"/>
 								<value value="2105000001051234561"/>
 							</identifier>
 							<status value="issued"/>
 							<issuer>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_LE_Sitz&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1dp2EPfpnuiFcOVekOWh0z">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_LE_Sitz">
 									<valueCoding>
-										<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringer_Sitz&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3460H7nho-T_OuKUrtp9-b"/>
+										<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringer_Sitz"/>
 										<code value="1"/>
 									</valueCoding>
 								</extension>
 								<identifier>
 									<type>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringertyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0YnnVmEpxOfUyRqhGSfl-S"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Leistungserbringertyp"/>
 											<code value="A"/>
 										</coding>
 									</type>
-									<system value="https://www.google.com/url?q=http://fhir.de/sid/arge-ik/iknr&source=gmail-imap&ust=1706175766000000&usg=AOvVaw10KriPJZkO_TJaPSAMy2Mt"/>
+									<system value="http://fhir.de/sid/arge-ik/iknr"/>
 									<value value="308412345"/>
 								</identifier>
 							</issuer>
 							<lineItem>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Positionstyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1BO3HKd_Y3ibzotDxUM0Ld">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Positionstyp">
 									<valueCodeableConcept>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Positionstyp&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2PMk3zi2FSGo-CtypeumRJ"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Positionstyp"/>
 											<code value="1"/>
 											<display value="übrige Position"/>
 										</coding>
 									</valueCodeableConcept>
 								</extension>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_VAT_VALUE&source=gmail-imap&ust=1706175766000000&usg=AOvVaw3NMmWQ_xUy98fPnyDESE6W">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_VAT_VALUE">
 									<valueMoney>
 										<value value="6.08"/>
 										<currency value="EUR"/>
 									</valueMoney>
 								</extension>
-								<extension url="https://www.google.com/url?q=https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Import&source=gmail-imap&ust=1706175766000000&usg=AOvVaw1HtVGazTlSK67_qvz_qFYF">
+								<extension url="https://fhir.gkvsv.de/StructureDefinition/GKVSV_EX_ERP_Import">
 									<valueCodeableConcept>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Import&source=gmail-imap&ust=1706175766000000&usg=AOvVaw0t1HBFViWBoRjmIsoYO44S"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_Import"/>
 											<code value="0"/>
 										</coding>
 									</valueCodeableConcept>
@@ -592,7 +592,7 @@
 								<sequence value="1"/>
 								<chargeItemCodeableConcept>
 									<coding>
-										<system value="https://www.google.com/url?q=http://terminology.hl7.org/CodeSystem/v3-NullFlavor&source=gmail-imap&ust=1706175766000000&usg=AOvVaw21Tml6eya5JTPM59_ADL2e"/>
+										<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
 										<code value="UNC"/>
 									</coding>
 								</chargeItemCodeableConcept>
@@ -600,7 +600,7 @@
 									<type value="deduction"/>
 									<code>
 										<coding>
-											<system value="https://www.google.com/url?q=https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_ZuAbschlagKey&source=gmail-imap&ust=1706175766000000&usg=AOvVaw2AfpFstcxPr9rduRGKfg40"/>
+											<system value="https://fhir.gkvsv.de/CodeSystem/GKVSV_CS_ERP_ZuAbschlagKey"/>
 											<code value="R001"/>
 										</coding>
 									</code>
