@@ -11,9 +11,13 @@ import org.hl7.fhir.r4.model.Binary;
 import org.hl7.fhir.r4.model.Bundle;
 import org.hl7.fhir.r4.model.Identifier;
 import org.hl7.fhir.r4.model.Medication;
+import org.hl7.fhir.r4.model.OperationOutcome;
+import org.hl7.fhir.r4.model.OperationOutcome.IssueSeverity;
+import org.hl7.fhir.r4.model.OperationOutcome.OperationOutcomeIssueComponent;
 import org.hl7.fhir.r4.model.Patient;
 import org.hl7.fhir.r4.model.ResourceType;
 import org.hl7.fhir.r4.model.StringType;
+import validation.KBVForValidator;
 
 public class FHIRHandler {
 
@@ -61,7 +65,7 @@ public class FHIRHandler {
         "entry.where(resource.meta.profile.contains('https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN')).resource",
         Medication.class);
     // PZN Verordnung muss nicht vorhanden sein
-    if(medicationOptional.isPresent()) {
+    if (medicationOptional.isPresent()) {
       Medication medication = medicationOptional.get();
       System.out.println("PZN Medikament: " + medication.getCode().getCodingFirstRep().getCode());
     }
@@ -72,6 +76,22 @@ public class FHIRHandler {
         .filter(e -> e.getResource().getResourceType() == ResourceType.Patient)
         .map(ec -> (Patient) ec.getResource()).findFirst();
     Patient patient = patientOptional.get();
+
+    //validate Patient
+    KBVForValidator validator = new KBVForValidator(ctx);
+    OperationOutcome operationOutcome = validator.validate(patient);
+    System.out.println("Patient Validierungsergebniss:");
+    List<OperationOutcomeIssueComponent> list = operationOutcome.getIssue().stream().filter(
+            i -> i.getSeverity() == IssueSeverity.ERROR || i.getSeverity() == IssueSeverity.FATAL)
+        .toList();
+    if (list.isEmpty()) {
+      System.out.println("Validierung war erfolgreich");
+    } else {
+      System.out.println(parser.encodeResourceToString(operationOutcome));
+    }
+    System.out.println("=====");
+
+    // "extract" data
     System.out.println("Nachname: " + patient.getNameFirstRep().getFamily());
     System.out.println("Vornamen: " + patient.getNameFirstRep().getGivenAsSingleString());
     System.out.println("Geburtsdatum " + patient.getBirthDate().toString());
